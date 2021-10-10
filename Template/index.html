@@ -1,0 +1,116 @@
+{%load staticfiles%}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Formulario</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-6">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3>Contactanos</h3>
+									<p class="mb-4">Favor de Realizar el Formulario para sus necesidades</p>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            se le agradeceria si nos dejara su mensaje, y gracias por resolver este formulario!
+				      		</div>
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p><span>Direccion:</span>3ra Av. Zona 6, Barrio Hacienda de la Virgen, Salamá Baja Verapaz</p>
+							          </div>
+						          </div>
+										</div>
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p><span>Email:</span> <a href="https://enigmatic-inlet-53595.herokuapp.com/">CrisCrazy133@gmail.com</a></p>
+							          </div>
+						          </div>
+										</div>
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p><span>Telefono:</span> <a href="tel://1234567920">+502 4760-7058</a></p>
+							          </div>
+						          </div>
+										</div>
+									</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Correo">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="dirección">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Deje su Mensaje"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Enviar" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="w-100 social-media mt-5">
+										<h3>Mas Informacion en Redes Sociales</h3>
+										<p>
+											<a href="https://www.facebook.com/profile.php?id=100008205099261">Facebook</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5 img" style="background-image: url({% static 'images/img.jpg' %});">
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+
